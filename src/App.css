@@ -1,7 +1,12 @@
+* {
+}
 .section {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    background-color: #282c34;
+    color: yellow;
+    font-size: 20px;
+    padding: 15px;
 }
 Routes {
     padding: 400px;
@@ -13,6 +18,7 @@ ul {
 }
 ul li {
     padding-left: 25px;
+    text-decoration: none;
 }
 
 .App-logo {
@@ -48,4 +54,15 @@ ul li {
     to {
         transform: rotate(360deg);
     }
+}
+
+li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+#route-element {
+    font-size: 25px;
+    padding: 30px;
+    width: 180px;
 }

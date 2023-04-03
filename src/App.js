@@ -27,21 +27,23 @@ function App() {
                         </li>
                     </ul>
                 </div>
+                <div id="route-element">
+                    <Routes>
+                        <Route exact path="/" element={<HomeComponent />}>
+                            {" "}
+                        </Route>
+                        <Route exact path="/Counter" element={<CounterComponent />}>
+                            {" "}
+                        </Route>
+                        <Route exact path="/Subscribe" element={<SubscribeComponent />}>
+                            {" "}
+                        </Route>
+                        <Route exact path="/Form" element={<FormComponent />}>
+                            {" "}
+                        </Route>
+                    </Routes>
+                </div>
             </div>
-            <Routes>
-                <Route exact path="/" element={<HomeComponent />}>
-                    {" "}
-                </Route>
-                <Route exact path="/Counter" element={<CounterComponent />}>
-                    {" "}
-                </Route>
-                <Route exact path="/Subscribe" element={<SubscribeComponent />}>
-                    {" "}
-                </Route>
-                <Route exact path="/Form" element={<FormComponent />}>
-                    {" "}
-                </Route>
-            </Routes>
         </Router>
     );
 }
